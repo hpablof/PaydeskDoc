@@ -81,27 +81,25 @@
 			<nav id="docs-nav" class="docs-nav navbar">
 				<ul class="section-items list-unstyled nav flex-column pb-3">
 					<li class="nav-item section-title"><a class="nav-link scrollto active" href="#section-1"><span
-								class="theme-icon-holder mr-2"><i class="fas fa-map-signs"></i></span>Introduction</a>
+								class="theme-icon-holder mr-2"><i class="fas fa-map-signs"></i></span>Introducción</a>
 					</li>
 					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-2"><span
-								class="theme-icon-holder mr-2"><i class="fas fa-arrow-down"></i></span>Installation</a>
+								class="theme-icon-holder mr-2"><i class="fas fa-arrow-down"></i></span>Instalación</a>
 					</li>
 					<li class="nav-item"><a class="nav-link scrollto" href="#item-2-1">Emisor de fichas</a></li>
 					<li class="nav-item"><a class="nav-link scrollto" href="#item-2-2">Pantalla de orden de atencion</a></li>
 					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-3"><span
-								class="theme-icon-holder mr-2"><i class="fas fa-box"></i></span>APIs</a></li>
-					<li class="nav-item"><a class="nav-link scrollto" href="#item-3-1">Section Item 3.1</a></li>
-					<li class="nav-item"><a class="nav-link scrollto" href="#item-3-2">Section Item 3.2</a></li>
-					<li class="nav-item"><a class="nav-link scrollto" href="#item-3-3">Section Item 3.3</a></li>
+								class="theme-icon-holder mr-2"><i class="fas fa-box"></i></span>Inicio de sesión</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-3-1">Iniciar sesión</a></li>
 					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-4"><span
-								class="theme-icon-holder mr-2"><i class="fas fa-cogs"></i></span>Integrations</a></li>
-					<li class="nav-item"><a class="nav-link scrollto" href="#item-4-1">Section Item 4.1</a></li>
-					<li class="nav-item"><a class="nav-link scrollto" href="#item-4-2">Section Item 4.2</a></li>
-					<li class="nav-item"><a class="nav-link scrollto" href="#item-4-3">Section Item 4.3</a></li>
+								class="theme-icon-holder mr-2"><i class="fas fa-cogs"></i></span>Pagina de inicio</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-4-1">Estado de ventanillas</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-4-2">Menu</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-4-3">Estadisticas</a></li>
 					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-5"><span
-								class="theme-icon-holder mr-2"><i class="fas fa-tools"></i></span>Utilities</a></li>
-					<li class="nav-item"><a class="nav-link scrollto" href="#item-5-1">Section Item 5.1</a></li>
-					<li class="nav-item"><a class="nav-link scrollto" href="#item-5-2">Section Item 5.2</a></li>
+								class="theme-icon-holder mr-2"><i class="fas fa-tools"></i></span>Usuarios</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-5-1">Listar usuarios</a></li>
+					<li class="nav-item"><a class="nav-link scrollto" href="#item-5-2">Crear usuario</a></li>
 					<li class="nav-item"><a class="nav-link scrollto" href="#item-5-3">Section Item 5.3</a></li>
 					<li class="nav-item section-title mt-3"><a class="nav-link scrollto" href="#section-6"><span
 								class="theme-icon-holder mr-2"><i class="fas fa-laptop-code"></i></span>Web</a></li>
@@ -134,13 +132,13 @@
 			<div class="container">
 				<article class="docs-article" id="section-1">
 					<header class="docs-header">
-						<h1 class="docs-heading">Introduccion <span class="docs-time">Ultima Actulizacion: 2019-07-16</span>
+						<h1 class="docs-heading">Introducción <span class="docs-time">Ultima Actulizacion: 2019-07-16</span>
 						</h1>
 						<section class="docs-intro">
-							<p>Section intro goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-								finibus condimentum nisl id vulputate. Praesent aliquet varius eros interdum suscipit.
-								Donec eu purus sed nibh convallis bibendum quis vitae turpis. Duis vestibulum diam
-								lorem, vitae dapibus nibh facilisis a. Fusce in malesuada odio.</p>
+							<p>Este documento describe los requerimientos de software de Paydesk, cuyo objetivo principal es 
+								descentralizar las colas de distintas areas de la universidad privada Domingo Savio con un 
+								sistema informático.
+							</p>
 						</section>
 					</header>
 					
@@ -149,7 +147,7 @@
 
 				<article class="docs-article" id="section-2">
 					<header class="docs-header">
-						<h1 class="docs-heading">Instalacion</h1>
+						<h1 class="docs-heading">Instalación</h1>
 						<section class="docs-intro">
 							<p>El modo de acceso al sistema se realiza mediante una direccion url, que le sera provisto
 								por el administrador, conjuntamente con unas creedenciales para poder acceder al mismo, estos estaran relacionados 
@@ -158,8 +156,11 @@
 								El formato de url para el acceso al sistema puede ser parecido al siguiente:
 								<br>
 								<div class=" text-center">
-									<a class="btn btn-primary btn-lg btn-block" href="">http://www.Paydesk.com/</a>
+									<a class="btn btn-primary btn-lg btn-block" href="">http://localhost/paydesk2.0/public/</a>
 								</div>
+								<figure class="figure docs-figure py-3">
+									<a><img class="figure-img img-fluid shadow rounded" src="assets/images/features/video1.gif" alt="" style="width: 600px;"></a>
+								</figure>
 							</p>
 						</section>
 						<!--//docs-intro-->
@@ -171,7 +172,10 @@
 							usuario pueda realizar la peticion de una nueva ficha de atencion. 
 						</p>
 						<p>La url se vera aproximadamente de la siguiente manera:</p>
-						<a class="btn btn-primary btn-lg btn-block" href="">http://www.Paydesk.com/tickets</a>
+						<a class="btn btn-primary btn-lg btn-block" href="">http://localhost/paydesk2.0/public/tickets</a>
+						<figure class="figure docs-figure py-3">
+								<a><img class="figure-img img-fluid shadow rounded" src="assets/images/features/tickets.gif" alt="" style="width: 600px;"></a>
+						</figure>
 					</section>
 					<!--//section-->
 
@@ -192,42 +196,30 @@
 
 				<article class="docs-article" id="section-3">
 					<header class="docs-header">
-						<h1 class="docs-heading">APIs</h1>
+						<h1 class="docs-heading">Inicio de sesion</h1>
 						<section class="docs-intro">
-							<p>Section intro goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-								finibus condimentum nisl id vulputate. Praesent aliquet varius eros interdum suscipit.
-								Donec eu purus sed nibh convallis bibendum quis vitae turpis. Duis vestibulum diam
-								lorem, vitae dapibus nibh facilisis a. Fusce in malesuada odio.</p>
+							<p>EL sistema esta protegido por credenciales de nombre de usuario y contraseñas 
+								para que personas externas a cuentas diferentes puedan corremper la cuenta de otros.
+							</p>
+					</section>
 						</section>
 						<!--//docs-intro-->
 					</header>
 					<section class="docs-section" id="item-3-1">
-						<h2 class="section-heading">Section Item 3.1</h2>
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis
-							leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis
-							felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio
-							in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec
-							arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
-					</section>
-					<!--//section-->
-
-					<section class="docs-section" id="item-3-2">
-						<h2 class="section-heading">Section Item 3.2</h2>
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis
-							leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis
-							felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio
-							in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec
-							arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
-					</section>
-					<!--//section-->
-
-					<section class="docs-section" id="item-3-3">
-						<h2 class="section-heading">Section Item 3.3</h2>
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis
-							leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis
-							felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio
-							in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec
-							arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+						<h2 class="section-heading">Iniciar sesión</h2>
+						<p>El inicio de sesion en un principio tiene una cuenta por defecto de administrador 
+								con el nombre de usuario <b>"Administrador"</b> y conraseña <b>"administrador123"</b>, con estos credenciales 
+								correctamente escritos podremos iniciar sesion, ademas tambien podemos recordar el nombre de usuario y la contraseña marcando la casilla recordarme.</p>
+								<p>En caso de que los credenciales esten mal escritos el sistema no permitira el inicio de sesion y mostrará error.</p>
+								<p>En el ejemplo se cometerá un error al ingresar el nombre de usuario y nos mostrara un error y luego recien
+									se ingresará los credenciales correctos el administrador ficticio se llama <b>Cosme Fulanito</b>, una vez ingresado al sistema se mostrara el cierre de sesion.
+								</p>
+								<p><b>Este procedimiento se aplica para cualquier tipo de usuario siempre y cuando el administrador los haya creado
+									con sus correspondientes nombres de usuario y contraseñas
+								</b></p>
+							<figure class="figure docs-figure py-3">
+								<a><img class="figure-img img-fluid shadow rounded" src="assets/images/features/sesion.gif" alt="" style="width: 600px;"></a>
+							</figure>
 					</section>
 					<!--//section-->
 				</article>
@@ -235,42 +227,44 @@
 
 				<article class="docs-article" id="section-4">
 					<header class="docs-header">
-						<h1 class="docs-heading">Intergrations</h1>
+						<h1 class="docs-heading">Pagina de inicio</h1>
 						<section class="docs-intro">
-							<p>Section intro goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-								finibus condimentum nisl id vulputate. Praesent aliquet varius eros interdum suscipit.
-								Donec eu purus sed nibh convallis bibendum quis vitae turpis. Duis vestibulum diam
-								lorem, vitae dapibus nibh facilisis a. Fusce in malesuada odio.</p>
+							<p>Una vez que se valida el inicio de sesión el sistema mostrará la pagina de inicio.</p>
 						</section>
 						<!--//docs-intro-->
 					</header>
 					<section class="docs-section" id="item-4-1">
-						<h2 class="section-heading">Section Item 4.1</h2>
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis
-							leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis
-							felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio
-							in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec
-							arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+						<h2 class="section-heading">Estado de ventanillas</h2>
+						<p>El estado de ventanillas muestra solo al administrador aquellas ventanilas como cajas o personal de plataforma que esta activos de color verde
+							y los que no de color rojo.
+						</p>
+						<figure class="figure docs-figure py-3">
+							<a><img class="figure-img img-fluid shadow rounded" src="assets/images/features/estadoV.gif" alt="" style="width: 600px;"></a>
+						</figure>
 					</section>
 					<!--//section-->
 
 					<section class="docs-section" id="item-4-2">
-						<h2 class="section-heading">Section Item 4.2</h2>
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis
-							leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis
-							felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio
-							in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec
-							arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+						<h2 class="section-heading">Menu</h2>
+						<p>En el lado izquierdo de la aplicación muestra un menu en la que el adminisyrador puede gestionar a los usuarios,
+							las ventanillas, las colas, areas, videos, comunicados, anuncios y la administracion de la base de datos de los estudiantes.
+						</p>
+						<figure class="figure docs-figure py-3">
+								<a><img class="figure-img img-fluid shadow rounded" src="assets/images/features/sidebar.gif" alt="" style="width: 600px;"></a>
+						</figure>
 					</section>
 					<!--//section-->
 
 					<section class="docs-section" id="item-4-3">
-						<h2 class="section-heading">Section Item 4.3</h2>
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis
-							leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis
-							felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio
-							in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec
-							arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+						<h2 class="section-heading">Estadisticas</h2>
+						<p>Las estadisticas contemplan la atencion de fichas y los tiempos promedios de atencion por ventanillas,
+							areas, general y por usuario, esto cambia dinamicamente segun el año, el mes y el dia. <br>
+							Las estadisticas de atencion ademas contemplan cuantas fichas fueron atendidas o aceptadas y cuantas
+							fichas fueron canceladas.
+						</p>
+						<figure class="figure docs-figure py-3">
+								<a><img class="figure-img img-fluid shadow rounded" src="assets/images/features/estadisticas.gif" alt="" style="width: 600px;"></a>
+						</figure>
 					</section>
 					<!--//section-->
 				</article>
@@ -278,42 +272,35 @@
 
 				<article class="docs-article" id="section-5">
 					<header class="docs-header">
-						<h1 class="docs-heading">Utilities</h1>
+						<h1 class="docs-heading">Usuarios</h1>
 						<section class="docs-intro">
-							<p>Section intro goes here. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
-								finibus condimentum nisl id vulputate. Praesent aliquet varius eros interdum suscipit.
-								Donec eu purus sed nibh convallis bibendum quis vitae turpis. Duis vestibulum diam
-								lorem, vitae dapibus nibh facilisis a. Fusce in malesuada odio.</p>
+							<p>Los usuarios registrados en el sistema son los unicos que pueden ejercer acciones sobre este.</p>
 						</section>
 						<!--//docs-intro-->
 					</header>
 					<section class="docs-section" id="item-5-1">
-						<h2 class="section-heading">Section Item 5.1</h2>
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis
-							leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis
-							felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio
-							in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec
-							arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+						<h2 class="section-heading">Listar Usuarios</h2>
+						<p>La lista de usuarios muestra todos las personas registradas por el administrador con su respectivos nombres, apellidos telefenos y el rol que desempeña, el usuario registrado puede ser gestionado por 
+							el administrador como ser ver la informacion, actualizar sus datos, eliminar del sistema y ademas de crear uno nuevo.
+						</p>
+						<figure class="figure docs-figure py-3">
+								<a><img class="figure-img img-fluid shadow rounded" src="assets/images/features/listarUsuarios.gif" alt="" style="width: 600px;"></a>
+						</figure>
 					</section>
 					<!--//section-->
 
 					<section class="docs-section" id="item-5-2">
-						<h2 class="section-heading">Section Item 5.2</h2>
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis
-							leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis
-							felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio
-							in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec
-							arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+						<h2 class="section-heading">Crear usuario administrador</h2>
+						<p>Al crear un usuario administrador como el que esta por defecto quiere decir que este tendra control total del sistema.</p>
 					</section>
 					<!--//section-->
 
 					<section class="docs-section" id="item-5-3">
-						<h2 class="section-heading">Section Item 5.3</h2>
-						<p>Vivamus efficitur fringilla ullamcorper. Cras condimentum condimentum mauris, vitae facilisis
-							leo. Aliquam sagittis purus nisi, at commodo augue convallis id. Sed interdum turpis quis
-							felis bibendum imperdiet. Mauris pellentesque urna eu leo gravida iaculis. In fringilla odio
-							in felis ultricies porttitor. Donec at purus libero. Vestibulum libero orci, commodo nec
-							arcu sit amet, commodo sollicitudin est. Vestibulum ultricies malesuada tempor.</p>
+						<h2 class="section-heading">Crear usuario</h2>
+						<p>Cuando se crea un usuario convencional sin privelegios de administrador este tiene roles que cumplir como ser cajero,
+							atencion al cliente, gestionar los videos y comunicados estos no podran crear otros usuarios ni generar acciones 
+							que el administrador posee.
+						</p>
 					</section>
 					<!--//section-->
 				</article>
